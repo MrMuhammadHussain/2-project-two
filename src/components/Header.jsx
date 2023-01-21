@@ -22,26 +22,27 @@ const Header = () => {
                     <DrawerHeader>Website Name</DrawerHeader>
                     <DrawerBody>
                         <VStack alignItems={'flex-start'}>
-                            <Button variant={"ghost"} colorScheme={"purple"}>
+                            <Button onClick={onClose} variant={"ghost"} colorScheme={"purple"}>
                                 <Link to={"/"} >Home</Link>
                             </Button>
-                            <Button variant={"ghost"} colorScheme={"purple"}>
+                            <Button onClick={onClose} variant={"ghost"} colorScheme={"purple"}>
                                 <Link to={"/videos"} >Videos</Link>
                             </Button>
-                            <Button variant={"ghost"} colorScheme={"purple"}>
+                            <Button onClick={onClose} variant={"ghost"} colorScheme={"purple"}>
                                 <Link to={"/videos?category=free"} >Free Videos</Link>
                             </Button>
-                            <Button variant={"ghost"} colorScheme={"purple"}>
+                            <Button onClick={onClose} variant={"ghost"} colorScheme={"purple"}>
                                 <Link to={"/upload"} >Upload Video</Link>
                             </Button>
 
                         </VStack>
-                        <HStack pos={"absolute"} bottom={"10"} left={"10"} >
-                            <Button colorScheme={"purple"}>
-                                <Link to={""} >Login</Link>
+                        <HStack pos={"absolute"} bottom={"10"} left={"0"}  w={"full"}
+                        justifyContent={"space-evenly"}>
+                            <Button onClick={onClose} colorScheme={"purple"}>
+                                <Link to={"/login"} >Login</Link>
                             </Button>
-                            <Button variant={"outline"} colorScheme={"purple"}>
-                                <Link to={""} >Singup</Link>
+                            <Button onClick={onClose} variant={"outline"} colorScheme={"purple"}>
+                                <Link to={"/singup"} >Singup</Link>
                             </Button>
                         </HStack>
 
