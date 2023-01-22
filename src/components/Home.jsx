@@ -43,7 +43,7 @@ const Home = () => {
 const Mycarousel = () => {
     return (
 
-        <Carousel autoPlay infiniteLoop interval={1500} showArrows={false} showStatus={false}  >
+        <Carousel autoPlay infiniteLoop interval={3000} showArrows={false} showStatus={false}  >
             <Box w={"full"} h={"100vh"} >
                 <Image src={img1} />
                 <Heading bgColor={"blackAlpha.600"} color={"white"} {...HeadingOption}>Type You Want</Heading>
