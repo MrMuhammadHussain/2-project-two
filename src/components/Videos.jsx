@@ -17,7 +17,7 @@ const Videos = () => {
 
         </video>
         <VStack alignItems={"flex-start"} p={"8"} w={"full"} overflowY={"auto"}>
-          <Heading>Video 1</Heading>
+          <Heading>Sample Videos</Heading>
           <Text>Sample Video for testing</Text>
         </VStack>
 
@@ -25,7 +25,7 @@ const Videos = () => {
       <VStack w={["full", "xl"]} alignItems={"stretch"} p={"8"} spacing={"8"} overflowY={"auto"}>
         {
           VideosArr.map((item,index)  =>( 
-<Button variant={"ghost"} colorScheme={"purple"} onClick={()=>setVideoSrc (item) }key={index} >Video one {index + 1}  </Button>
+<Button variant={"ghost"} colorScheme={"purple"} onClick={()=>setVideoSrc (item) }key={index} >Sample Video {index + 1}  </Button>
           )) }
       </VStack>
 
