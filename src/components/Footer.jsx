@@ -28,7 +28,7 @@ const Footer = () => {
 
         <VStack w={"full"} >
           <Heading size={"md"} textTransform={"uppercase"}>
-            Socil Media
+          Social Media
           </Heading>
           <Button variant={"link"} colorScheme={"white"}>
             <a href="http://www.github.com/mrmuhammadhussain" target="_blank="><AiFillGithub size={"20"} />  </a>
